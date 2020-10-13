@@ -17,25 +17,14 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="1" customClass="GSPaletteView">
-            <rect key="frame" x="0.0" y="0.0" width="150" height="39"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <rect key="frame" x="0.0" y="0.0" width="173" height="31"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
             <subviews>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wU-LY-RSK">
-                    <rect key="frame" x="109" y="6" width="37" height="16"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <buttonCell key="cell" type="push" title="Go" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Xg0-Mm-i8W">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="menu" size="9"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="stepAndRepeat:" target="-2" id="oTT-67-QvC"/>
-                    </connections>
-                </button>
                 <textField toolTip="Total steps including (!) the original." verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vXl-zm-pCr" customClass="GSSteppingTextField">
-                    <rect key="frame" x="75" y="7" width="30" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="101" y="2" width="32" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="S0T-Vq-CMm">
-                        <font key="font" metaFont="menu" size="9"/>
+                        <font key="font" metaFont="system" size="9"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -44,10 +33,10 @@
                     </connections>
                 </textField>
                 <textField toolTip="Vertical displacement" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6e2-V7-WbM" customClass="GSSteppingTextField">
-                    <rect key="frame" x="39" y="7" width="30" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="58" y="2" width="35" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="4du-Wu-1wq">
-                        <font key="font" metaFont="menu" size="9"/>
+                        <font key="font" metaFont="system" size="9"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -56,10 +45,10 @@
                     </connections>
                 </textField>
                 <textField toolTip="Horizontal displacement" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JB-fj-Ku8" customClass="GSSteppingTextField">
-                    <rect key="frame" x="5" y="7" width="30" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="5" y="2" width="35" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="tit-6l-Tbu">
-                        <font key="font" metaFont="menu" size="9"/>
+                        <font key="font" metaFont="system" size="9"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -68,37 +57,71 @@
                     </connections>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tim-9N-hV9">
-                    <rect key="frame" x="3" y="25" width="11" height="11"/>
+                    <rect key="frame" x="5" y="20" width="30" height="11"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <textFieldCell key="cell" controlSize="mini" lineBreakMode="clipping" title="X" id="ive-nS-YvE">
-                        <font key="font" metaFont="menu" size="9"/>
+                        <font key="font" metaFont="system" size="9"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pwl-Ei-AJz">
-                    <rect key="frame" x="37" y="25" width="34" height="11"/>
+                    <rect key="frame" x="58" y="20" width="34" height="11"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <textFieldCell key="cell" controlSize="mini" lineBreakMode="clipping" title="Y" id="eTV-TZ-FhY">
-                        <font key="font" metaFont="menu" size="9"/>
+                        <font key="font" metaFont="system" size="9"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gux-qg-vgb">
-                    <rect key="frame" x="73" y="25" width="34" height="11"/>
+                    <rect key="frame" x="101" y="20" width="34" height="11"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <textFieldCell key="cell" controlSize="mini" lineBreakMode="clipping" title="Steps" id="kog-os-zy7">
-                        <font key="font" metaFont="menu" size="9"/>
+                        <font key="font" metaFont="system" size="9"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button toolTip="Repeats the shape to the specified number" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dN6-iS-GGI">
+                    <rect key="frame" x="132" y="-7" width="42" height="35"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSTouchBarFastForwardTemplate" imagePosition="only" alignment="center" controlSize="mini" state="on" transparent="YES" imageScaling="proportionallyDown" inset="2" id="zAG-iB-gNm">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="9"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="stepAndRepeat:" target="-2" id="XiB-ka-WVN"/>
+                    </connections>
+                </button>
+                <button toolTip="Exchanges X and Y values" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fdx-9F-02h">
+                    <rect key="frame" x="39" y="2" width="20" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" title="↔︎" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1e9-B0-MQm">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="11" name=".SFNS-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="exchangeXandY:" target="-2" id="CH0-KZ-o3n"/>
+                    </connections>
+                </button>
             </subviews>
             <connections>
                 <outlet property="_controller" destination="-2" id="jOT-R9-oyt"/>
             </connections>
-            <point key="canvasLocation" x="-6" y="130.5"/>
+            <point key="canvasLocation" x="1.5" y="112.5"/>
         </customView>
+        <button verticalHuggingPriority="750" id="aNi-Gg-7cX">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DmG-ww-UlK">
+                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                <font key="font" metaFont="system"/>
+            </buttonCell>
+            <point key="canvasLocation" x="17" y="243"/>
+        </button>
     </objects>
+    <resources>
+        <image name="NSTouchBarFastForwardTemplate" width="22" height="30"/>
+    </resources>
 </document>

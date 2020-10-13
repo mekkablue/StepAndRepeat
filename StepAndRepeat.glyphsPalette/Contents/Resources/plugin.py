@@ -79,26 +79,27 @@ class StepAndRepeat(PalettePlugin):
 		self.yField.setStringValue_(Glyphs.defaults['com.mekkablue.StepAndRepeat.y'])
 		self.stepsField.setStringValue_(Glyphs.defaults['com.mekkablue.StepAndRepeat.steps'])
 
-	# Action triggered by UI
+	# Actions triggered by UI
 	@objc.IBAction
 	def setXValue_( self, sender ):
-		
-		# Store value coming in from dialog
 		Glyphs.defaults['com.mekkablue.StepAndRepeat.x'] = sender.floatValue()
 		
-	# Action triggered by UI
 	@objc.IBAction
 	def setYValue_( self, sender ):
-		
-		# Store value coming in from dialog
 		Glyphs.defaults['com.mekkablue.StepAndRepeat.y'] = sender.floatValue()
 		
-	# Action triggered by UI
 	@objc.IBAction
 	def setStepsValue_( self, sender ):
-		
-		# Store value coming in from dialog
 		Glyphs.defaults['com.mekkablue.StepAndRepeat.steps'] = sender.intValue()
+		
+	@objc.IBAction
+	def exchangeXandY_(self, sender):
+		newY = Glyphs.defaults['com.mekkablue.StepAndRepeat.x']
+		newX = Glyphs.defaults['com.mekkablue.StepAndRepeat.y']
+		self.xField.setStringValue_(newX)
+		self.yField.setStringValue_(newY)
+		Glyphs.defaults['com.mekkablue.StepAndRepeat.x'] = newX
+		Glyphs.defaults['com.mekkablue.StepAndRepeat.y'] = newY
 
 	@objc.IBAction
 	def stepAndRepeat_(self, sender):
@@ -146,7 +147,7 @@ class StepAndRepeat(PalettePlugin):
 					else:
 						Message(
 							title="Step & Repeat Error",
-							message="The current values make no sense. X and Y cannot both be zero, and Steps must be at least 2. You need to tab out of the field or press the Return key to confirm an entry.",
+							message="The current values make no sense. X and Y cannot both be zero, and Steps must be at least 2. You may need to tab out of the field or press the Return key to confirm an entry.",
 							OKButton=None
 							)
 
